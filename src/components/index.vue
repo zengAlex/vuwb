@@ -10,13 +10,16 @@
         <div class="search">
             <ul>
                 <li>
-                    <a target="_blank" href="https://www.baidu.com">百度</a>
+                    <i></i>
+                    <a target="_blank" href="https://www.baidu.com" class="baidu">百度</a>
                 </li>
                 <li>
-                    <li><a target="_blank" href="https://www.sogou.com">搜狗</a></li>
+                    <i></i>
+                    <li><a target="_blank" href="https://www.sogou.com" class="sougou">搜狗</a></li>
                 </li>
                 <li>
-                    <li><a target="_blank" href="https://www.so.com/">360</a></li>
+                    <i></i>
+                    <li><a target="_blank" href="https://www.so.com/" class="so">360</a></li>
                 </li>
 <!--                 <li>
                     <li><a target="_blank" href="https://www.google.com/">谷歌</a></li>
@@ -55,6 +58,19 @@
                     color: #333333;
                     display: block;
                     line-height: 30px;
+                    float: left;
+                }
+                i{
+                    width: 32px;
+                    height: 32px;
+                    float: left;
+                    display: block;
+                    background-image: url("../assets/img/sprites.png");
+                    background-size: 67px 67px;
+                    background-repeat: no-repeat;
+                    &.baidu{
+                        
+                    }
                 }
             }
         }

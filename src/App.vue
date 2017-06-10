@@ -27,7 +27,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-    @import '../assets/css/reset.css';
+    @import 'assets/css/reset.css';
     #app {
         font-family: 'Hiragino Sans GB','Microsoft YaHei','黑体',sans-serif;
         -webkit-font-smoothing: antialiased;
