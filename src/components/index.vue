@@ -8,18 +8,19 @@
     <div class="main-container">
         <!--搜索区域-->
         <div class="search">
+            <span class="title">搜索工具</span>
             <ul>
                 <li>
-                    <i></i>
-                    <a target="_blank" href="https://www.baidu.com" class="baidu">百度</a>
+                    <i class="baidu"></i>
+                    <a target="_blank" href="https://www.baidu.com" >百度</a>
                 </li>
                 <li>
-                    <i></i>
-                    <li><a target="_blank" href="https://www.sogou.com" class="sougou">搜狗</a></li>
+                    <i class="sougou"></i>
+                    <a target="_blank" href="https://www.sogou.com">搜狗</a>
                 </li>
                 <li>
-                    <i></i>
-                    <li><a target="_blank" href="https://www.so.com/" class="so">360</a></li>
+                    <i class="so"></i>
+                    <a target="_blank" href="https://www.so.com/" >360</a>
                 </li>
 <!--                 <li>
                     <li><a target="_blank" href="https://www.google.com/">谷歌</a></li>
@@ -44,13 +45,27 @@
     .main-container{
         width: 1200px;
         overflow: hidden;
+        margin: 0 auto;
         margin-top: 20px;
         .search{
             width: 120px;
             float: left;
             border: 1px solid #dddddd;
             margin-left: 20px;
+            .title{
+                background-color: #c8c8c8;
+                color: #333;
+                font-size: 14px;
+                text-align: left;
+                height: 28px;
+                line-height: 28px;
+                text-indent: 10px;
+                margin-bottom: 6px;
+                cursor: pointer;
+            }
             li{
+                height: 32px;
+                margin-bottom: 10px;
                 a{
                     text-align: left;
                     height: 30px;
@@ -68,8 +83,15 @@
                     background-image: url("../assets/img/sprites.png");
                     background-size: 67px 67px;
                     background-repeat: no-repeat;
+                    margin-left: 10px;
                     &.baidu{
-                        
+                        background-position: 0 -36px;
+                    }
+                    &.sougou{
+                        background-position: 0 0 ;
+                    }
+                    &.so{
+                        background-position: -32px -36px;
                     }
                 }
             }

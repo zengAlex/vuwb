@@ -47,6 +47,7 @@ export default {
         background-color: #555555;
         .main-nav{
             width: 1200px;
+            height: 40px;
             margin: 0 auto;
             a{
                 width: 108px;

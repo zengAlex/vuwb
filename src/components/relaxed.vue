@@ -1,7 +1,7 @@
 <template>
     <div class="video-content">
     	<div class="items" v-for="video in video" >
-			<video v-bind:src="video.videos.large.url" controls="controls" ></video>
+			<!-- <video v-bind:src="video.videos.large.url" controls="controls" ></video> -->
 			<img v-bind:src="video.userImageURL" >
 		</div>
 		<button @click="get">发送请求</button>
@@ -43,8 +43,8 @@ export default {
 
 	methods: {
 		get: function(){
-			this.$http.get('https://pixabay.com/api/videos/?key=5590866-2c52e0d3dd91693419a35133c&video_type=animation', {}).then(function(response) {
-			    	console.info(response.body.hits);
+			this.$http.get('https://pixabay.com/api/?key=5590866-2c52e0d3dd91693419a35133c&order=popular', {}).then(function(response) {
+			    	console.info(response);
 			          // 这里是处理正确的回调
 			        this.video = response.body.hits
 			    }, function(response) {
